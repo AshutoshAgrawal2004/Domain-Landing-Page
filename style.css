@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  color: white;
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+#heading {
+  font-size: 32px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+#buy {
+  background-color: transparent;
+  border: white 5px solid;
+  mix-blend-mode: multiply;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+#buy:hover {
+  background: white;
+  color: transparent;
+}
