@@ -3,6 +3,11 @@ body {
   color: white;
   background-image: url('bg.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  font-size: 20px;
 }
 
 #heading {
@@ -10,18 +15,30 @@ body {
   font-family: 'Times New Roman', sans-serif;
 }
 
-#buy {
+button {
   background-color: transparent;
-  border: white 5px solid;
-  mix-blend-mode: multiply;
   background: transparent;
   color: white;
-  padding: 10px;
-  font-size: 20px;
   outline: none;
 }
 
-#buy:hover {
-  background: white;
-  color: transparent;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#buy {
+  border: white 5px solid;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#cancelredirect {
+  border: white 2px solid;
+  font-size: 15px;
+  padding: 5px;
+}
+
+#redirectlink, #domainname {
+  text-decoration: underline;
 }

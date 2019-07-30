@@ -11,13 +11,35 @@
 
 <body>
   <header>
+    Redirecting to <a id="redirectlink" href="https://www.google.com">www.google.com</a> in <span id="timer">10</span> seconds <button id="cancelredirect">Cancel</button>
   </header>
   <section>
 
-    <h1 id="heading"><span id="domain-name">Turbonomic.co.uk</span> is available for sale!</h1>
+    <h1 id="heading"><span id="domainname">Turbonomic.co.uk</span> is available for sale!</h1>
 
     <button id="buy" onclick="window.open('https://sedo.com/search/details/?domain=turbonomic.co.uk&origin=domaindetails', '_blank')">Buy Now!</button>
   </section>
+  <script>
+    var redirectTime = 10;
+    var timedis = document.getElementById('timer');
+    var cancelredirect = document.getElementById('cancelredirect');
+    var timer = setInterval(() => {
+      console.log(`Redirecting in ${redirectTime} seconds`);
+      timedis.innerHTML = redirectTime;
+      redirectTime--
+      if (redirectTime < 0) {
+        clearInterval(timer)
+        // window.location.href = "https://www.google.com"
+      }
+    }, 1000);
+
+    cancelredirect.addEventListener('click', () => {
+      console.log('clicked');
+      clearInterval(timer);
+      let redinf = document.querySelector('header');
+      redinf.style.visibility = 'hidden';
+    })
+  </script>
 </body>
 
 </html>
