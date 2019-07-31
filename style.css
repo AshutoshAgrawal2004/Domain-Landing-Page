@@ -6,10 +6,6 @@ body {
   background-repeat: no-repeat;
 }
 
-header {
-  font-size: 20px;
-}
-
 #heading {
   font-size: 32px;
   font-family: 'Times New Roman', sans-serif;
@@ -33,12 +29,10 @@ a {
   padding: 10px;
 }
 
-#cancelredirect {
-  border: white 2px solid;
-  font-size: 15px;
-  padding: 5px;
+#buy:hover {
+  cursor: pointer;
 }
 
-#redirectlink, #domainname {
+#domainname {
   text-decoration: underline;
 }
